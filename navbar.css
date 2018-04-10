@@ -14,7 +14,6 @@ firstrow > * {
 }
 .button {
     border-radius: 20px;
-    
     width: 100px;
     height: 30px;
     
@@ -22,12 +21,12 @@ firstrow > * {
 .button1 {
     background-color: #6a6a6a;
     color: white;
-    border: 2px solid #6a6a6a;
+    border: 1px solid #6a6a6a;
 }
 .button2 {
     background-color: white;
     color: #6a6a6a;
-    border: 2px solid #6a6a6a;
+    border: 1px solid #6a6a6a;
 }
 .membership-buttons  {
     text-align: right !important;
@@ -42,12 +41,29 @@ firstrow > * {
     font-weight: 100 !important;
 }
 .search-bar{
-    float: 1;
-    border: 4px solid;
-    border-color: red;
+    display: flex;    
+    flex-direction: row-reverse;
+    border: 1px solid;
+    border-color: #6a6a6a;
+    border-radius: 20px;
+    width: 60%;
 }
-input[1]{
-    align-self: center;
-    align-items: center;
-    align-content: center;
+input[type="text"]{
+    width: 90%;
+    border-radius: 20px;
+    border-width: 0px;
+    border-color: white;
+}
+#searchimage{
+    max-width: 100%;
+    height: auto;
+}
+#searchbutton{
+    width: 20%;
+    height: auto;
+}
+input[type="image"]{
+    width: 3em;
+    height: 10%;
+    border-radius: 20px;
 }
