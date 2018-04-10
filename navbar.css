@@ -1,0 +1,53 @@
+* {
+    font-family: IranSans;
+       
+}
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    background-color: #ffffff;
+    flex : 1'
+}
+firstrow > * {
+    flex : 1;
+}
+.button {
+    border-radius: 20px;
+    
+    width: 100px;
+    height: 30px;
+    
+}
+.button1 {
+    background-color: #6a6a6a;
+    color: white;
+    border: 2px solid #6a6a6a;
+}
+.button2 {
+    background-color: white;
+    color: #6a6a6a;
+    border: 2px solid #6a6a6a;
+}
+.membership-buttons  {
+    text-align: right !important;
+    flex: 1;
+}
+.logo {
+    font-size: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    flex: 1;
+    -webkit-font-smoothing: antialiased;    
+    font-weight: 100 !important;
+}
+.search-bar{
+    float: 1;
+    border: 4px solid;
+    border-color: red;
+}
+input[1]{
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
