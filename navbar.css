@@ -1,4 +1,4 @@
-* {
+*{
     font-family: IranSans;
        
 }
@@ -7,10 +7,25 @@
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     background-color: #ffffff;
-    flex : 1'
+}
+firstrow{
+    padding-top: 1em;
+    width: 80%;
+    margin: auto;
 }
 firstrow > * {
     flex : 1;
+}
+Secondrow > *{
+    flex: 1;
+    text-align: center;    
+    border-bottom: 1px solid #cccbcb;
+    font-size: 1.5em;
+}
+secondrow{
+    padding-top: 1em;
+    width: 80%;
+    margin:auto;
 }
 .button {
     border-radius: 20px;
