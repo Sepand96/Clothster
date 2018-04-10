@@ -10,6 +10,7 @@ pagecontents{
 }
 pagecontents *{
     justify-content: center;
+    margin: 5px;
 }
 .rightcolumn{
     display: flex;
@@ -18,7 +19,7 @@ pagecontents *{
     flex: 2;
 }
 .rightcolumn *{
-    padding: 10px;
+    padding: 5px;
 }
 .leftcolumn{
     text-align: center;
@@ -29,6 +30,7 @@ pagecontents *{
     flex-direction: row-reverse;
     text-align: center;
     flex-wrap: nowrap;
+    border: 1px solid #cecece;
 }
 #tr1{
     display: flex;
@@ -48,4 +50,36 @@ tr1h{
 #tr2{
     text-align: center;
     flex: 2;
+}
+#top-left{
+    border: 1px solid #cecece;
+}
+.leftcolumn * {
+    padding: 5px;
+}
+#top-left>img{
+    width: auto;
+    height: 16.5em;
+}
+#bottom-right{
+    padding: 0px;
+    margin: auto;
+    display:flex;
+    flex :1;
+    width: 698px;
+    height: 400px;
+    background-image: url("brands.png") ;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    justify-content: center;
+    align-items: center;
+}
+#bottom-right > button{
+    background-color: blue;
+    border-radius: 50px;
+    border: 0px;
+    width:300px;
+    height:35px;
+    text-align: center;
+    color: white;
 }
