@@ -1,6 +1,5 @@
 *{
-    font-family: IranSans;
-       
+    font-family: IranSans;   
 }
 .flex-container {
     display: flex;
@@ -21,11 +20,24 @@ Secondrow > *{
     text-align: center;    
     border-bottom: 1px solid #cccbcb;
     font-size: 1.5em;
+    color: #666666;
 }
 secondrow{
     padding-top: 1em;
+    width: 70%;
+    margin:auto;
+}
+thirdrow{
+    padding-top: 1em;
     width: 80%;
     margin:auto;
+    padding-bottom: 2em;
+}
+thirdrow > *{
+    flex: 1;
+    justify-content: center;  
+    width: 10%;
+    height: 10%;
 }
 .button {
     border-radius: 20px;
