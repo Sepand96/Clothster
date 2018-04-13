@@ -31,7 +31,7 @@ thirdrow{
     padding-top: 1em;
     width: 80%;
     margin:auto;
-    padding-bottom: 2em;
+    padding-bottom: 2   em;
 }
 thirdrow > *{
     flex: 1;
@@ -89,7 +89,7 @@ input[type="text"]{
     width: 20%;
     height: auto;
 }
-input[type="image"]{
+#searchimg{
     width: 3em;
     height: 10%;
     border-radius: 20px;

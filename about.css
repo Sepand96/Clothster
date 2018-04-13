@@ -23,6 +23,8 @@ pagecontents *{
 }
 .leftcolumn{
     text-align: center;
+    display: flex;
+    flex-direction: column;
     flex: 1;
 }
 #top-right{
@@ -53,23 +55,28 @@ tr1h{
 }
 #top-left{
     border: 1px solid #cecece;
-}
-.leftcolumn * {
-    padding: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #top-left>img{
     width: auto;
-    height: 16.5em;
+    height: 80%;
+}
+tl1{
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
 }
 #bottom-right{
     padding: 0px;
-    margin: auto;
     display:flex;
     flex :1;
-    width: 698px;
-    height: 400px;
     background-image: url("brands.png") ;
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: #cccccc;
     justify-content: center;
     align-items: center;
@@ -82,4 +89,56 @@ tr1h{
     height:35px;
     text-align: center;
     color: white;
+}
+
+.bottom-left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 10px;
+}
+.bottom-left > *{
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#openmail{
+    width: 4em;
+    height: auto;
+    margin: auto;
+    color: white;
+}
+blt1 {
+    font-size: 1.5em;
+}
+blt2 {
+    font-size: 2em;
+}
+.email-bar{
+    display: flex;    
+    flex-direction: row-reverse;
+    border: 1px solid;
+    border-color: #6a6a6a;
+    border-radius: 20px;
+    width: 60%;
+    height: 20px;
+    margin: auto;
+    background-color: white;
+}
+#subscribe{
+    width: 30%;
+    margin: auto;
+    background-color: black;
+    border: 0px;
+    padding: 0px;
+    color: white;
+    height: 70%;
+    border-radius: 10px;
+}
+#closemail{
+    margin: 0px;
+    padding: 10px;
 }
