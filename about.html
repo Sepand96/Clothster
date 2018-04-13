@@ -10,41 +10,44 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="about.css">
 </head>
 
 <body>
-    <firstrow class="flex-container">
-        <div class="membership-buttons">
-            <button class="button button1">ورود</button>
-            <button class="button button2">عضویت</button>
-        </div>
-        <div class="logo">
-            <img src="logo.PNG">
-        </div>
-        <div>
-            <form class="search-bar">
-                <input id="search" type="text">
-                <input id="searchimg" type="image" src="search.PNG" />
-            </form>
-        </div>
-    </firstrow>
-    <secondrow class="flex-container">
-        <div>مردانه</div>
-        <div>زنانه</div>
-        <div>بچگانه</div>
-        <div>ورزشی</div>
-        <div>تخفیف</div>
-        <div>برند‌ها</div>
-    </secondrow>
-    <thirdrow class="flex-container">
-        <input type="image" src="about-us.PNG">
-        <input type="image" src="contact-us.PNG">
-        <input type="image" src="FAQ.PNG">
-        <input type="image" src="return-policy.PNG">
-        <input type="image" src="terms.PNG">
-        <input type="image" src="privacy.PNG">
-    </thirdrow>
+    <navbar>
+        <firstrow class="flex-container">
+            <div class="membership-buttons">
+                <button class="button button1">ورود</button>
+                <button class="button button2">عضویت</button>
+            </div>
+            <div class="logo">
+                <img src="logo.PNG">
+            </div>
+            <div>
+                <form class="search-bar">
+                    <input id="search" type="text">
+                    <input id="searchimg" type="image" src="search.PNG" />
+                </form>
+            </div>
+        </firstrow>
+        <secondrow class="flex-container">
+            <div>مردانه</div>
+            <div>زنانه</div>
+            <div>بچگانه</div>
+            <div>ورزشی</div>
+            <div>تخفیف</div>
+            <div>برند‌ها</div>
+        </secondrow>
+        <thirdrow class="flex-container">
+            <input type="image" src="about-us.PNG">
+            <input type="image" src="contact-us.PNG">
+            <input type="image" src="FAQ.PNG">
+            <input type="image" src="return-policy.PNG">
+            <input type="image" src="terms.PNG">
+            <input type="image" src="privacy.PNG">
+        </thirdrow>
+    </navbar>
     <pagecontents class="flex-container">
         <div class="rightcolumn">
             <div id="top-right">
@@ -79,17 +82,44 @@
                 <img id="openmail" src="openmail.svg">
                 <blt1>در خبر نامه ما</blt1>
                 <blt2>!عضو شوید</blt2>
-                <form class="email-bar">                    
+                <form class="email-bar">
                     <img id="closemail" src="closemail.svg" />
                     <input id="search" type="text">
                 </form>
                 <div>
                     <button id="subscribe">عضو شوید</button>
                 </div>
-                
             </div>
         </div>
     </pagecontents>
+    <footer>
+        <div class="footer-right">
+            <div class="services">
+                <h>خدمات مشتریان</h>
+                <p>سوالات متداول</p>
+                <p>بازگرداندن کالا</p>
+                <p>شرایط استفاده</p>
+                <p>حریم شخصی</p>
+            </div>
+            <div class="information">
+                <h>اطلاعات ما</h>
+                <p>درباره‌ی ما</p>
+                <p>تماس با ما</p>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <h>به ما در رسانه‌های اجتماعی بپیوندید</h>
+            <social>
+                <img src="facebook.svg">
+                <img src="googleplus.svg">
+                <img src="twitter.svg">
+            </social>
+        </div>
+        <div class="footer-left">
+            تمامی حقوق این سایت متعلق به دانشگاه امیرکبیر بوده و هرگونه استفاده از منابع و طراحی‌های این سایت توسط نهادی خارج از دانشگاه
+            با پیگرد قانونی همراه خواهد بود.
+        </div>
+    </footer>
 </body>
 
 </html>

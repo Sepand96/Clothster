@@ -1,0 +1,27 @@
+footer{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    background-color: #eeeeee
+}
+footer >*{
+    flex: 1;
+    text-align: center;
+}
+.footer-right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+}
+.footer-right > *{
+    flex: 1;
+    text-align: center;
+}
+h {
+    font-size: 1.5em;
+    font-weight: bold;
+}
