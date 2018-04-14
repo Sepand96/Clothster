@@ -33,7 +33,7 @@ p{
 }
 #leftside {
     transform: rotate(90deg);
-    transform-origin: 35% 550%;
+    transform-origin: 38% 550%;
     font-size: 3em;
     white-space: nowrap;
     display: block;
