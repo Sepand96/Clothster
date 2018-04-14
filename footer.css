@@ -71,6 +71,9 @@ p2{
     text-align: center;
     color: #666666; 
 }
+p2:hover{
+    color:blue;
+}
 h2{
     display: inline;
     text-align: center;

@@ -119,6 +119,11 @@ a >*{
     fill: #666666;
 }
 a:link{
+    color: #666666;
+    text-decoration: none;
+}
+a:visited{
+    color: #666666;
     text-decoration: none;
 }
 a:hover{
@@ -147,4 +152,8 @@ p0{
     display: block;
     text-decoration: none;
     text-align: center;
+}
+h3:hover{
+    color: blue;
+    text-decoration: underline;
 }
