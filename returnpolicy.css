@@ -1,0 +1,97 @@
+pagecontents{
+    display: block;
+    padding-top: 2em;
+}
+pagecontents >*{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+h{
+    display: block;
+    text-align: right;
+    color: #666666;
+}
+p{  
+    display: block;
+    color: #666666; 
+    text-align: right;
+    font-size: 1.4em;
+}
+.rowflex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rowflex >*{
+    padding-left: 10px;
+}
+.columnflex{
+    display: flex;
+    flex-direction: column;
+}
+#returnimage{   
+}
+#leftside {
+    transform: rotate(90deg);
+    transform-origin: 35% 550%;
+    font-size: 3em;
+    white-space: nowrap;
+    display: block;
+}
+#rightside {
+    transform: rotate(-90deg);
+    transform-origin: -20% -30%;
+    font-size: 3em;
+    display: block;
+    white-space: nowrap;
+}
+#leftcolumn{
+    flex:2;
+    justify-content: center;
+    align-content: center;
+}
+#rightcolumn{
+    flex:1;
+}
+pagecontents >div{
+    border-top: 1px solid #aaaaaa;
+}
+#returnform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 10px 10px 10px rgb(201, 201, 201);
+}
+#returnform >*{
+    flex:1;
+    padding: 10px 5px;
+    margin: 5px;
+    justify-content: center;
+    align-content: center;
+}
+p2{
+    display: block;
+    text-align: right;
+    color: blue;
+}
+#begin{
+    border-bottom: 1px solid gray;
+}
+#orderid{
+    width: auto;
+    border: 1px solid #e0e0e0;
+    background-color: #cccccc;
+}
+#cityselect{
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #cccccc;
+}
+input[type="submit"]{
+    margin: 20px 0px;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: blue;;
+    color: white;
+}
