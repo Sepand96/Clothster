@@ -1,0 +1,60 @@
+pagecontents{
+    display: block;
+    padding-top: 2em;
+}
+pagecontents >*{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+h{
+    display: block;
+    text-align: right;
+    direction: rtl;
+}
+p{
+    display: block;
+    color: #666666; 
+    text-align: right;
+    font-size: 1.4em;
+}
+p1{
+    color: #888888; 
+    text-align: right;
+    font-size: 1.1em;
+}
+.rowflex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rowflex >*{
+    padding-left: 10px;
+}
+.columnflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#cb3{
+    border-right: 1px solid rgb(172, 172, 172);
+    padding-right: 15px;
+}
+#contactbar{
+    border-top: 1px solid rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(172, 172, 172);
+    padding-top: 10px;
+}
+#addressbar{
+    padding-top: 40px;
+}
+#exceptions{
+    background-color:#BA6568;
+    border-radius: 5px;
+}
+#exp{
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding: 20px 5px;
+}
