@@ -45,10 +45,17 @@ thirdrow > *{
     height: 30px;
     
 }
+.button2:hover{
+    border-color: blue;
+    color: blue;
+}
 .button1 {
     background-color: #6a6a6a;
     color: white;
     border: 1px solid #6a6a6a;
+}
+.button1:hover{
+    background-color: blue;
 }
 .button2 {
     background-color: white;
@@ -75,6 +82,9 @@ thirdrow > *{
     border-radius: 20px;
     width: 60%;
 }
+.search-bar:hover{
+    border-color: blue;
+}
 input[type="text"]{
     width: 90%;
     border-radius: 20px;
@@ -94,7 +104,47 @@ input[type="text"]{
     height: 10%;
     border-radius: 20px;
 }
+a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 5px;
+}
 a >*{
     width: 95%;
-    height: 95%;;
+    height: 95%;
+    fill: #666666;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    background-color: blue;
+}
+a:hover > *{
+    color:white;
+}
+a:hover >svg{
+    fill:white;
+}
+.navicons{
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+h0{
+    font-size:3.2em;
+    display: block;
+    text-align: center;
+}
+p0{
+    color:#666666;
+    font-size: 1.5em;
+    display: block;
+    text-decoration: none;
+    text-align: center;
 }
