@@ -5,7 +5,7 @@ footer{
     justify-content: center;
     width: 90%;
     margin: auto;
-    background-color: #eeeeee
+    background-color: #e0e0e0
 }
 footer >*{
     flex: 1;
@@ -24,4 +24,36 @@ footer >*{
 h {
     font-size: 1.5em;
     font-weight: bold;
+}
+.footer-middle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#googleplus{
+    width: 5em;
+    height: auto;
+}
+#facebook{
+    width: 4.4em;
+    height: auto;
+}
+#facebook >circle{
+    fill: slategrey;
+}
+#facebook >circle:hover{
+    fill: blue;
+}
+.svg-button{
+    fill: slategray;
+    border: 0px transparent;
+}
+#twitter > path{
+    fill: slategray;
+}
+#twitter > path:hover{
+    fill: blue;
+}
+.svg-button:hover{
+    fill:blue;
 }
