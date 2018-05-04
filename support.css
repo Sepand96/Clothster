@@ -28,7 +28,7 @@
     margin: auto;
 }
 #chatbox{
-    height: 20em;
+    height: 22em;
     width: 20em;
     display: none;
     background-color: blue;
@@ -51,15 +51,16 @@
     border-radius: 8px;
 }
 #infobar{
+    height: 4em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
 }
 #chatarea{
-    height: 14em;
+    height: 16em;
     width: 20em;
-    background-color: #DDDDDD;
+    background-color: #f0f0f0;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
 }
@@ -75,4 +76,11 @@
     background: none;
     margin: auto;
     border: none;
+}
+p9{
+    text-align: center;
+    font-size: 1.1em;
+    margin: auto;
+    display:block;
+    color:white;
 }
