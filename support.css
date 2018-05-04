@@ -1,0 +1,57 @@
+.onlinechat{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+}
+.onlinechat > button{
+    height: 4em;
+    width: 20em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;   
+    background-color: blue;
+    border: none;
+    color: white;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    z-index: 1;
+}
+.onlinechat>button>div{
+    font-size: 2em;
+    color: white;
+}
+#supporticon{
+    width: auto;
+    height: 70%;
+    margin: auto;
+}
+#chatbox{
+    height: 20em;
+    width: 20em;
+    display: none;
+}
+#supportimg{
+    height: 3em;
+    width: auto;
+    margin: auto;
+    border-radius: 2em;
+}
+#minimize{
+    height: 2em;
+    width: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+}
+#infobar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: blue;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border:none;
+}

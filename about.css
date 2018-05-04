@@ -73,6 +73,7 @@ tl1{
 #bottom-right{
     padding: 0px;
     display:flex;
+    height: 22em;
     flex :1;
     background-image: url("brands.png") ;
     background-repeat: no-repeat;
