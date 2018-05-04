@@ -1,6 +1,6 @@
 function openchatbox() {
     document.getElementById("chat_button").style.display="none";
-    document.getElementById("chatbox").style.display="block";
+    document.getElementById("chatbox").style.display="flex";
 }
 function closechatbox(){
     document.getElementById("chatbox").style.display='none';

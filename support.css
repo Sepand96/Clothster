@@ -31,6 +31,11 @@
     height: 20em;
     width: 20em;
     display: none;
+    background-color: blue;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border:none;
+    flex-direction: column;
 }
 #supportimg{
     height: 3em;
@@ -50,8 +55,24 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    background-color: blue;
+}
+#chatarea{
+    height: 14em;
+    width: 20em;
+    background-color: #DDDDDD;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
-    border:none;
+}
+#chat_submit{
+    
+    display: flex;
+    flex-direction: row;
+    height: 2em;
+    background-color: white;
+    border: 5px solid #666666;
+}
+#sendbutton{
+    background: none;
+    margin: auto;
+    border: none;
 }
