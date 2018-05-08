@@ -49,7 +49,7 @@ function submitmsg(){
     var msg = document.getElementById("chatinput").value;
     document.getElementById("chatinput").value = null;
     xmlhttp.send("{\"message\":\"" + escape(msg) + "\"}");
-    createmessage(true, msg);
+    createmessage(true, msg, new Date( new Date().getTime() ) );
 }
 var msgs = [];
 function receivemsg(){
@@ -64,7 +64,8 @@ function receivemsg(){
                 else
                     var msg = JSON.parse(this.responseText);
                     msgs.push(msg.responses[0].message);
-                    createmessage(false, msg.responses[0].message);
+                    var mydate = new Date(msg.responses[0].date);
+                    createmessage(false, msg.responses[0].message, mydate);
             }
             else {
                 window.alert("Error " + this.statusText);
@@ -72,10 +73,11 @@ function receivemsg(){
         }
     };
 }
-function createmessage(sender, msg){
+function createmessage(sender, msg, mydate){
     var newmsgdiv = document.createElement("div");
     var msgdiv = document.createElement("div");
     var userphoto = document.createElement("img");
+    var msgdate = document.createElement("div");
     userphoto.id = "supportimg";
     newmsgdiv.style.display = "flex";
     newmsgdiv.style.flexdirection = "row-reverse";
@@ -94,6 +96,10 @@ function createmessage(sender, msg){
         newmsgdiv.appendChild(msgdiv);
         newmsgdiv.appendChild(userphoto);
     }
+    msgdate.innerHTML = mydate.toLocaleString();
+    msgdate.style.fontSize = "0.8em";
+    msgdate.style.textAlign = "right";
+    msgdiv.appendChild(msgdate); 
     var parent = document.getElementById("chatarea");
     parent.appendChild(newmsgdiv);
 }

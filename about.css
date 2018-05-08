@@ -102,7 +102,7 @@ tl1{
 }
 .bottom-left > *{
     color: white;
-    flex: 1;
+    
     display: flex;
     flex-direction: column;
 }
@@ -125,19 +125,19 @@ blt2 {
     border-color: #6a6a6a;
     border-radius: 20px;
     width: 60%;
-    height: 20px;
+    height: 50px;
     margin: auto;
     background-color: white;
 }
 #subscribe{
-    width: 30%;
     margin: auto;
     background-color: black;
     border: 0px;
-    padding: 0px;
+    padding: 20px 40px;
     color: white;
-    height: 70%;
+    height: 40px;
     border-radius: 10px;
+    text-align: center;
 }
 #closemail{
     margin: 0px;

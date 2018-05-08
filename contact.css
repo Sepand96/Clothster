@@ -71,7 +71,11 @@ p1{
     border-radius: 20px;
     padding: 5px 20px;
 }
-p3{
+.fff > input[type="text"]:hover{
+    background-color: white;
+    border-color: blue;
+}
+p4{
     display: block;
     color: blue;   
     text-align: right;
@@ -90,6 +94,10 @@ input[type="submit"]{
     border: 1px blue solid;
     color: blue;
     border-radius: 20px;
+}
+input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
 }
 pagecontents > form{
     background-color: white;

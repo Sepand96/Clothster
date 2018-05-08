@@ -81,6 +81,10 @@ p5{
     border: 1px solid #e0e0e0;
     background-color: #cccccc;
 }
+#orderid:hover{
+    background-color: white;
+    border-color: blue;
+}
 #cityselect{
     border-radius: 20px;
     border: 1px solid #e0e0e0;

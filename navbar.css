@@ -117,6 +117,10 @@ a >*{
     width: 95%;
     height: 95%;
     fill: #666666;
+    stroke : #666666;
+}
+a>svg{
+    padding-top: 10px;
 }
 a:link{
     color: #666666;
@@ -135,6 +139,7 @@ a:hover > *{
 }
 a:hover >svg{
     fill:white;
+    stroke: white;
 }
 .navicons{
     width: 40%;
@@ -142,7 +147,7 @@ a:hover >svg{
     margin: auto;
 }
 h0{
-    font-size:3.2em;
+    font-size: 57px;
     display: block;
     text-align: center;
 }
