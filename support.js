@@ -24,10 +24,10 @@ function processchatstart() {
     }
 }
 function getsupportinfo() {
-    var xmlhttp2 = new XMLHttpRequest();
-    xmlhttp2.open("get", "http://51.15.59.130:46260/support", true);
-    xmlhttp2.send(null);
-    xmlhttp2.onreadystatechange = processsupportinfo;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("get", "http://51.15.59.130:46260/support", true);
+    xmlhttp.send(null);
+    xmlhttp.onreadystatechange = processsupportinfo;
 }
 function processsupportinfo() {
     if (this.readyState == 4) {
@@ -42,9 +42,27 @@ function processsupportinfo() {
     }
 }
 function submitmsg(){
-    var xmlhttp3 = new XMLHttpRequest();
-    xmlhttp3.open("post", "http://51.15.59.130:46260/send", true);
-    var msg = document.getElementById("chatmsg").
-    xmlhttp2.send(null);
-    xmlhttp2.onreadystatechange = processsupportinfo;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("post", "http://51.15.59.130:46260/send", true);
+    xmlhttp.setRequestHeader('Content-Type', 'application/json');
+    var msg = document.getElementById("chatmsg").value;
+    xmlhttp.send("{\"message\":\"" + escape(msg) + "\"}");
+    var newmsgdiv = document.createElement("div");
+    var msgdiv = document.createElement("div");
+    var userphoto = document.createElement("img");
+    userphoto.id = "supportimg";
+    userphoto.src = "supportprofilepic.png"
+    newmsgdiv.appendChild(userphoto);
+    newmsgdiv.appendChild(msgdiv);
+    newmsgdiv.style.display = "flex";
+    msgdiv.innerHTML = msg;
+    var parent = document.getElementById("chatarea");
+    parent.appendChild(newmsgdiv);
+}
+var msgs = [];
+function receivemsg(){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("get", "http://51.15.59.130:46260/fetch", true);
+    xmlhttp.send(null);
+    xmlhttp.onreadystatechange = processsupportinfo;
 }

@@ -63,6 +63,7 @@
     background-color: #f0f0f0;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
+    padding: 1em;
 }
 #chat_submit{
     
@@ -83,4 +84,7 @@ p9{
     margin: auto;
     display:block;
     color:white;
+}
+#chatmsg{
+    padding: 0px 1em;
 }
